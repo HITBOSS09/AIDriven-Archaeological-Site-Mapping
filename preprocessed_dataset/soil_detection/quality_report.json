@@ -1,0 +1,34 @@
+{
+  "dataset_summary": {
+    "total_valid_images": 285,
+    "target_image_size": "640x640",
+    "split_distribution": {
+      "train": 199,
+      "val": 58,
+      "test": 28
+    }
+  },
+  "data_quality": {
+    "corrupted_images_count": 0,
+    "duplicate_sets_count": 1,
+    "missing_labels_count": 0,
+    "invalid_annotations_count": 0
+  },
+  "class_distribution": {
+    "0": 110,
+    "3": 103,
+    "2": 45,
+    "1": 90
+  },
+  "issues": {
+    "corrupted_images": [],
+    "duplicate_images": [
+      [
+        "C:\\Users\\Hitanshu\\Downloads\\Infosys\\dataset\\Soil detection.v3i.yolov8\\train\\images\\top-layer-moist-black-soil-600w-1802407393_jpg.rf.6792f349d5c4ab02fef37980780cb401.jpg",
+        "C:\\Users\\Hitanshu\\Downloads\\Infosys\\dataset\\Soil detection.v3i.yolov8\\train\\images\\top-layer-moist-black-soil-600w-1802407393_jpg.rf.eb7e3054ce727296f22c2d4c62e3e3ce.jpg"
+      ]
+    ],
+    "missing_labels": [],
+    "invalid_annotations": []
+  }
+}

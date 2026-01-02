@@ -1,0 +1,22 @@
+{
+  "num_classes": 4,
+  "class_names": [
+    "Alluvial Soil",
+    "Black Soil",
+    "Clay Soil",
+    "Red Soil"
+  ],
+  "counts": [
+    64,
+    55,
+    29,
+    51
+  ],
+  "total_samples": 199,
+  "fractions": [
+    0.32160804020100503,
+    0.27638190954773867,
+    0.1457286432160804,
+    0.2562814070351759
+  ]
+}

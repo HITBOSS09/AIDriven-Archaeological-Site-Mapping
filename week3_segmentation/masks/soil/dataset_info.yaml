@@ -1,0 +1,15 @@
+dataset_path: C:\Users\Hitanshu\Downloads\Infosys\week3_segmentation\masks\soil
+train: C:\Users\Hitanshu\Downloads\Infosys\week3_segmentation\masks\soil\train
+val: C:\Users\Hitanshu\Downloads\Infosys\week3_segmentation\masks\soil\val
+test: C:\Users\Hitanshu\Downloads\Infosys\week3_segmentation\masks\soil\test
+num_classes: 5
+class_names:
+- background
+- Alluvial Soil
+- Black Soil
+- Clay Soil
+- Red Soil
+image_size:
+- 640
+- 640
+original_dataset: C:\Users\Hitanshu\Downloads\Infosys\preprocessed_dataset\soil_detection\data.yaml

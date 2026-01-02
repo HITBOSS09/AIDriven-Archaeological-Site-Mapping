@@ -1,0 +1,10 @@
+{
+  "total_processed": 285,
+  "polygons_converted": 0,
+  "bboxes_converted": 348,
+  "splits": {
+    "train": 199,
+    "val": 58,
+    "test": 28
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "loss": 0.46341197192668915,
+  "accuracy": 0.8571428571428571,
+  "class_names": [
+    "Alluvial Soil",
+    "Black Soil",
+    "Clay Soil",
+    "Red Soil"
+  ],
+  "per_class": [
+    {
+      "precision": 0.8571428448979593,
+      "recall": 0.6666666592592594,
+      "support": 9
+    },
+    {
+      "precision": 0.8749999890625002,
+      "recall": 0.8749999890625002,
+      "support": 8
+    },
+    {
+      "precision": 0.6666666555555557,
+      "recall": 0.9999999750000006,
+      "support": 4
+    },
+    {
+      "precision": 0.9999999857142858,
+      "recall": 0.9999999857142858,
+      "support": 7
+    }
+  ],
+  "confusion_matrix": [
+    [
+      6,
+      1,
+      2,
+      0
+    ],
+    [
+      1,
+      7,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      7
+    ]
+  ],
+  "training_config": {
+    "model": "resnet50",
+    "epochs": 11,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "batch_size": 16,
+    "class_weights": [
+      0.711056113243103,
+      0.8274107575416565,
+      1.5692273378372192,
+      0.8923057317733765
+    ]
+  }
+}

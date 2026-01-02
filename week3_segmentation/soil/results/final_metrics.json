@@ -1,0 +1,17 @@
+{
+  "class_names": [
+    "background",
+    "red soil",
+    "black soil",
+    "clay soil",
+    "alluvial soil"
+  ],
+  "per_class_iou": {
+    "background": 0.6181029125393294,
+    "red soil": 0.4018449200320056,
+    "black soil": 0.6646270959261327,
+    "clay soil": 0.11271305139215938,
+    "alluvial soil": 0.5543898488354803
+  },
+  "mean_iou": 0.47033556574502144
+}

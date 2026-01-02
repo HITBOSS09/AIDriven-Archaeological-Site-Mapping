@@ -1,0 +1,13 @@
+train: train/images
+val: val/images
+test: test/images
+nc: 1
+names:
+- vegetation
+roboflow:
+  workspace: blue-halo
+  project: vegetation-segmentation
+  version: 4
+  license: Public Domain
+  url: https://universe.roboflow.com/blue-halo/vegetation-segmentation/dataset/4
+path: C:\Users\Hitanshu\Downloads\Infosys\preprocessed_dataset\vegetation_detection

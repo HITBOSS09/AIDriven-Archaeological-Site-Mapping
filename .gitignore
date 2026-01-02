@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+
+# Streamlit
+.streamlit/
+
+# Training outputs
+runs/
+experiments/
+test_predictions_visual/
+
+# Datasets
+dataset/
+dataset_preprocessing/
+week2/
+week3/
+week4/
+week4_validation/
+week4_yolov8/
+
+# Models / weights
+*.pt
+*.pth
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,59 @@
+# Week 2: Data Augmentation Strategy for YOLOv8 Training
+# This configuration will be used in Week 3 for model training
+
+# Augmentation parameters for YOLOv8
+# These settings enhance model robustness and generalization
+
+# Geometric Augmentations
+hsv_h: 0.015          # Image HSV-Hue augmentation (fraction)
+hsv_s: 0.7            # Image HSV-Saturation augmentation (fraction)
+hsv_v: 0.4            # Image HSV-Value augmentation (fraction)
+
+degrees: 10.0         # Image rotation (+/- deg)
+translate: 0.1        # Image translation (+/- fraction)
+scale: 0.5            # Image scale (+/- gain)
+shear: 0.0            # Image shear (+/- deg)
+perspective: 0.0      # Image perspective (+/- fraction), range 0-0.001
+
+# Flip Augmentations
+flipud: 0.0           # Image flip up-down (probability)
+fliplr: 0.5           # Image flip left-right (probability)
+
+# Mosaic and MixUp
+mosaic: 1.0           # Image mosaic (probability) - combines 4 images
+mixup: 0.1            # Image mixup (probability) - blends 2 images
+
+# Copy-Paste Augmentation
+copy_paste: 0.1       # Segment copy-paste (probability)
+
+# Additional Augmentations
+auto_augment: randaugment  # Auto augmentation policy (randaugment, autoaugment, augmix)
+erasing: 0.4          # Random erasing probability during classification training
+
+# Crop Settings
+crop_fraction: 1.0    # Image crop fraction for classification
+
+# Training Hyperparameters (for reference in Week 3)
+lr0: 0.01            # Initial learning rate
+lrf: 0.01            # Final learning rate (lr0 * lrf)
+momentum: 0.937       # SGD momentum/Adam beta1
+weight_decay: 0.0005  # Optimizer weight decay
+warmup_epochs: 3.0    # Warmup epochs (fractions ok)
+warmup_momentum: 0.8  # Warmup initial momentum
+warmup_bias_lr: 0.1   # Warmup initial bias lr
+box: 7.5             # Box loss gain
+cls: 0.5             # Class loss gain
+dfl: 1.5             # DFL loss gain
+
+# Image Settings
+imgsz: 640           # Image size for training (pixels)
+batch: 16            # Batch size (-1 for AutoBatch)
+workers: 8           # Number of dataloader workers
+
+# Validation Settings
+val: true            # Validate during training
+plots: true          # Save training plots
+
+# Additional Options
+patience: 50         # Epochs to wait for no observable improvement for early stopping
+save_period: -1      # Save checkpoint every x epochs (disabled with -1)

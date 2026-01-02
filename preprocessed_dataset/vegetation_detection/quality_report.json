@@ -1,0 +1,26 @@
+{
+  "dataset_summary": {
+    "total_valid_images": 1068,
+    "target_image_size": "640x640",
+    "split_distribution": {
+      "train": 945,
+      "val": 83,
+      "test": 40
+    }
+  },
+  "data_quality": {
+    "corrupted_images_count": 0,
+    "duplicate_sets_count": 0,
+    "missing_labels_count": 0,
+    "invalid_annotations_count": 0
+  },
+  "class_distribution": {
+    "0": 2815
+  },
+  "issues": {
+    "corrupted_images": [],
+    "duplicate_images": [],
+    "missing_labels": [],
+    "invalid_annotations": []
+  }
+}

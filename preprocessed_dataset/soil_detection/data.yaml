@@ -1,0 +1,16 @@
+train: train/images
+val: val/images
+test: test/images
+nc: 4
+names:
+- Alluvial Soil
+- Black Soil
+- Clay Soil
+- Red Soil
+roboflow:
+  workspace: imit-h5ows
+  project: soil-detection-l0ngo
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/imit-h5ows/soil-detection-l0ngo/dataset/3
+path: C:\Users\Hitanshu\Downloads\Infosys\preprocessed_dataset\soil_detection
