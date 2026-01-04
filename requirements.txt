@@ -1,7 +1,12 @@
-streamlit==1.32.0
-torch>=2.0.0
-torchvision>=0.15.0
+streamlit
+torch
+torchvision
+opencv-python
+pillow
 numpy
-Pillow
-opencv-python-headless
+pandas
+scikit-learn
 pyyaml
+matplotlib
+tqdm
+
