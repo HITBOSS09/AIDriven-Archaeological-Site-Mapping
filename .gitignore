@@ -25,9 +25,14 @@ week4/
 week4_validation/
 week4_yolov8/
 
+
 # Models / weights
 *.pt
 *.pth
+
+# Allow deployed soil classification model
+!week3_segmentation/soil_pipeline/models/best_soil_classifier.pth
+
 
 # OS files
 .DS_Store
