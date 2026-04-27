@@ -1,31 +1,60 @@
 # 🌍 AI-Driven Archaeological Site Mapping
 
-Detecting hidden archaeological sites using vegetation anomalies and soil pattern analysis through deep learning.
+Detecting hidden archaeological sites using vegetation patterns and soil classification through AI.
 
-An AI-powered system that analyzes satellite and drone imagery to identify potential archaeological locations by studying terrain patterns, vegetation density, and soil characteristics.
+This project demonstrates how satellite imagery can be analyzed using deep learning to identify potential archaeological locations by studying vegetation density and soil characteristics.
 
 🔗 **Live Demo**: https://archaeological-frontend-one.vercel.app/
 
 ---
 
-## 🎥 Demo
+## 📌 Overview
 
-![Segmentation Demo](assets/demo.gif)
+Traditional archaeological surveys are time-consuming and limited in scale.
+This system explores how AI can assist in large-scale terrain analysis using:
 
-*Segmentation output highlighting vegetation, soil regions, and potential archaeological zones.*
+* 🌱 Vegetation anomaly detection
+* 🧱 Soil classification
+* 🛰️ Satellite image segmentation
 
 ---
 
-## 📊 Results
+## 📸 Screenshots & Demo
+
+---
+
+## 🛰️ Vegetation Segmentation
+
+![Segmentation](assets/segmentation.png)
+
+*Satellite input image → Ground truth → Model prediction.
+The model segments vegetation regions to detect anomalies that may indicate buried structures.*
+
+---
+
+## 🌱 Vegetation Coverage Mapping
+
+![Vegetation Map](assets/vegetation_map.png)
+
+*Detected vegetation regions highlighted in green.
+Variations in vegetation density help identify unusual terrain patterns.*
+
+---
+
+## 🧱 Soil Classification
+
+![Soil Classification](assets/soil_result.png)
+
+*The system classifies soil types from input images.
+Example: **Black Soil** predicted with high confidence (~90%).*
+
+---
+
+## 📊 Performance Analysis
 
 ![Performance](assets/performance.png)
 
-*The model segments imagery into vegetation and soil regions. Variations in vegetation density and soil patterns are used to identify potential archaeological sites.*
-
-**Evaluation Metrics:**
-- IoU (Intersection over Union)
-- Dice Coefficient
-- Accuracy
+*Model performance across different soil types showing strong classification accuracy.*
 
 ---
 
@@ -33,83 +62,112 @@ An AI-powered system that analyzes satellite and drone imagery to identify poten
 
 ![Architecture](assets/architecture.png)
 
-*Pipeline showing data flow from satellite imagery to prediction and visualization.*
+*End-to-end pipeline from user input → model processing → prediction output.*
 
 ---
 
 ## 🔬 Methodology
 
-1. **Data Collection**
-   - Satellite imagery / drone-based aerial data  
+1. **Data Input**
+
+   * Satellite / aerial imagery
 
 2. **Preprocessing**
-   - Image resizing and normalization  
-   - Noise reduction  
-   - Data augmentation  
 
-3. **Segmentation & Classification**
-   - U-Net architecture for semantic segmentation  
-   - Separation of vegetation and soil regions  
-   - Terrain classification  
+   * Image normalization
+   * Resizing & enhancement
 
-4. **Analysis**
-   - Vegetation density estimation  
-   - Soil pattern classification  
-   - Detection of anomalies indicating buried structures  
+3. **Vegetation Segmentation**
 
-5. **Prediction & Visualization**
-   - Mask generation  
-   - Overlay results on original images  
+   * Deep learning model (U-Net / YOLO-based segmentation)
+   * Extraction of vegetation regions
+
+4. **Soil Classification**
+
+   * CNN-based classifier (ResNet-based)
+   * Predict soil type & confidence
+
+5. **Analysis**
+
+   * Vegetation density variation
+   * Soil pattern interpretation
+   * Detection of anomalies
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
-- Automated archaeological site detection  
-- Semantic segmentation using deep learning  
-- Vegetation density analysis  
-- Soil classification for terrain understanding  
-- Detection of hidden patterns in terrain  
-- Scalable pipeline for large-area satellite analysis  
+* 🌱 Vegetation density analysis
+* 🧱 Soil classification system
+* 🛰️ Satellite image processing
+* 🧠 Deep learning-based segmentation
+* 📊 Visual performance insights
+* 🔍 Detection of potential archaeological zones
 
 ---
 
 ## 🌍 Applications
 
-- 🏛️ Archaeological site discovery  
-- 🌱 Vegetation-based anomaly detection  
-- 🧱 Soil classification for terrain mapping  
-- 🛰️ Remote sensing & geospatial intelligence  
-- 📍 Heritage preservation  
+* 🏛️ Archaeological site discovery
+* 🌱 Vegetation anomaly detection
+* 🧱 Soil-based terrain analysis
+* 🛰️ Remote sensing research
+* 📍 Heritage preservation
 
 ---
 
 ## ⚠️ Limitations
 
-- Performance depends on image quality and resolution  
-- Dense vegetation may obscure underlying structures  
-- Requires annotated datasets for accurate training  
+* Dependent on image quality & resolution
+* Dense vegetation may hide features
+* Requires high-quality labeled data
 
 ---
 
-## 🔮 Future Work
+## 🔮 Future Improvements
 
-- Integration with YOLO for object detection  
-- Multi-spectral & thermal image support  
-- GIS (Geographic Information Systems) integration  
-- Real-time mapping dashboard  
-- Drone-based automated surveying  
+* Multi-spectral image support
+* Integration with GIS systems
+* Real-time mapping dashboard
+* Drone-based data collection
+* Hybrid detection (segmentation + object detection)
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python  
-- OpenCV  
-- PyTorch / TensorFlow  
-- U-Net (Semantic Segmentation)  
-- NumPy, Matplotlib  
+* Python
+* OpenCV
+* PyTorch / TensorFlow
+* U-Net / YOLO (Segmentation)
+* ResNet (Classification)
+* NumPy, Matplotlib
 
 ---
 
 ## 📂 Project Structure
+
+assets/
+
+* segmentation.png
+* vegetation_map.png
+* soil_result.png
+* performance.png
+* architecture.png
+
+---
+
+## 📌 Key Insight
+
+Vegetation growth patterns and soil variations can reveal hidden underground structures.
+This project shows how AI can assist archaeologists in identifying such patterns efficiently.
+
+---
+
+## 👨‍💻 Author
+
+**Hitanshu Vaidya**
+
+---
+
+## ⭐ If you found this interesting, consider giving a star!
