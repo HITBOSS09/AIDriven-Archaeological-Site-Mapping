@@ -25,7 +25,7 @@ This system explores how AI can assist in large-scale terrain analysis using:
 
 ## 🛰️ Vegetation Segmentation
 
-![Segmentation](assets/segmentation.png)
+![Segmentation](assets/report.jpg)
 
 *Satellite input image → Ground truth → Model prediction.
 The model segments vegetation regions to detect anomalies that may indicate buried structures.*
@@ -34,7 +34,7 @@ The model segments vegetation regions to detect anomalies that may indicate buri
 
 ## 🌱 Vegetation Coverage Mapping
 
-![Vegetation Map](assets/vegetation_map.png)
+![Vegetation Map](assets/vegetation.jpg)
 
 *Detected vegetation regions highlighted in green.
 Variations in vegetation density help identify unusual terrain patterns.*
@@ -43,7 +43,7 @@ Variations in vegetation density help identify unusual terrain patterns.*
 
 ## 🧱 Soil Classification
 
-![Soil Classification](assets/soil_result.png)
+![Soil Classification](assets/soil.jpg)
 
 *The system classifies soil types from input images.
 Example: **Black Soil** predicted with high confidence (~90%).*
@@ -52,7 +52,7 @@ Example: **Black Soil** predicted with high confidence (~90%).*
 
 ## 📊 Performance Analysis
 
-![Performance](assets/performance.png)
+![Performance](assets/graph.jpg)
 
 *Model performance across different soil types showing strong classification accuracy.*
 
@@ -60,7 +60,7 @@ Example: **Black Soil** predicted with high confidence (~90%).*
 
 ## 🧠 System Architecture
 
-![Architecture](assets/architecture.png)
+![Architecture](assets/archi.jpg)
 
 *End-to-end pipeline from user input → model processing → prediction output.*
 
